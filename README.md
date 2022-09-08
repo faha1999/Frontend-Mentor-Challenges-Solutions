@@ -42,6 +42,10 @@ npm run build
 
 <a href="https://room-homepage-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq">Try Out</a>
 
+### Bookmark landing page
+
+<a href="https://bookmark-landing-page-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

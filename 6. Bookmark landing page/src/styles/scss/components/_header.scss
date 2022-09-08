@@ -1,0 +1,148 @@
+nav {
+  position: absolute;
+
+  .navMenu {
+    display: flex;
+    a {
+      color: $dark-blue;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: $soft-red;
+        transition: 0.4s ease-in-out;
+      }
+    }
+
+    button {
+      background: $soft-red;
+      color: $white;
+      font-size: 0.9rem;
+
+      &:hover {
+        border: 2px solid $soft-red;
+        color: $soft-red;
+      }
+    }
+  }
+
+  .togglerButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    z-index: 999;
+
+    .navMenu {
+      display: none;
+    }
+
+    .togglerButton {
+      display: block;
+      button {
+        background: transparent;
+      }
+    }
+
+    .mobileNav {
+      position: absolute;
+
+      .d-fixed {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(37, 43, 70, 0.95);
+        padding-top: 3rem;
+        height: 100vh;
+
+        .navbar-nav {
+          text-align: center;
+          padding-top: 2rem;
+          width: 85%;
+          margin: 0 auto;
+
+          .nav-item {
+            border-top: 1px solid $grayish-blue;
+            margin-right: 0 !important;
+            padding: 0.8rem 0;
+
+            &:last-child {
+              border-bottom: 1px solid $grayish-blue;
+            }
+
+            a {
+              color: $white;
+
+              &:hover {
+                color: $soft-red;
+              }
+            }
+          }
+        }
+
+        .mobileLogo {
+          width: 100%;
+          display: flex;
+
+          .logo {
+            width: 13rem;
+            height: 2rem;
+            padding-left: 2rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          button {
+            background: transparent;
+            margin-top: 0;
+            height: 2.3rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .logIn {
+          padding-top: 2rem;
+          text-align: center;
+
+          button {
+            width: 85%;
+            background: transparent;
+            border: 2px solid $white;
+            color: $white;
+
+            &:hover {
+              border: 2px solid $soft-red;
+              color: $soft-red;
+            }
+          }
+        }
+
+        .social-icons {
+          text-align: center;
+          margin-top: 20%;
+
+          img {
+            width: 1.5rem;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

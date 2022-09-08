@@ -1,0 +1,80 @@
+.NewsLetter {
+  background: $soft-blue;
+  text-align: center;
+
+  .content {
+    max-width: 30rem;
+    margin: 0 auto;
+
+    p,
+    h1 {
+      color: $white;
+    }
+
+    p {
+      letter-spacing: 4px;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    form {
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      .input-group {
+        width: 20rem;
+
+        input {
+          padding: 0.6rem;
+          border-radius: 0.225rem;
+          outline: none;
+        }
+
+        .invalid-feedback {
+          color: $white;
+          background: $soft-red;
+          padding: 0.5rem;
+          margin-top: -0.12rem;
+          text-align: left;
+        }
+      }
+
+      button {
+        background: $soft-red;
+        color: $white;
+        margin-left: auto;
+        height: 2.8rem;
+
+        &:hover {
+          border: 2px solid $soft-red;
+          color: $soft-red;
+          background: $white !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .NewsLetter {
+    .content {
+      form {
+        flex-direction: column;
+        padding: 0 1rem;
+
+        .input-group {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

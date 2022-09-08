@@ -1,0 +1,83 @@
+footer {
+  background: $dark-blue;
+  overflow: hidden;
+
+  .container {
+    padding: 3rem 0;
+
+    .logo {
+      img {
+        width: 10rem;
+      }
+    }
+
+    .Links {
+      a {
+        color: $white;
+        text-decoration: none;
+        margin-right: 2rem;
+        transition: 0.4s ease;
+        letter-spacing: 3px;
+
+        &:hover {
+          color: $soft-red;
+        }
+      }
+    }
+
+    .socialIcons {
+      .icons {
+        text-align: right;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    .attribution {
+      color: $white;
+      a {
+        color: $soft-red;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: $grayish-blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    text-align: center;
+
+    .container {
+      .Links {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          margin-right: 0;
+          padding-bottom: 2rem;
+        }
+      }
+
+      .socialIcons {
+        margin-top: 1rem;
+        .icons {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

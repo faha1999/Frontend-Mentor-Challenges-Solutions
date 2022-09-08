@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: $font-family;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $soft-red;
+    outline-offset: 2px;
+  }
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 0.25rem !important;
+  transition: 0.4s ease-in-out;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background: transparent !important;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $soft-red;
+    outline-offset: 2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  button {
+    padding: 0.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: $grayish-blue;
+}
+
+h1 {
+  color: $dark-blue;
+  font-size: 500;
+}
+
+.heading {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
+
+  p {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+}

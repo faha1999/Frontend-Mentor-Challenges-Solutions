@@ -1,0 +1,131 @@
+.features {
+  .content {
+    ul {
+      max-width: 40rem;
+      margin: 0 auto;
+      border-bottom: 1px solid $grayish-blue;
+
+      li {
+        .nav-link {
+          border: none;
+          color: $grayish-blue;
+
+          &.active {
+            color: $black;
+            border-bottom: 3px solid $soft-red;
+            transition: 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      animation: tabBackgroundSlide 1000ms ease-in-out;
+
+      img {
+        width: 90%;
+        background-position: left;
+        height: 100%;
+
+        &:nth-child(1) {
+          height: 25rem;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: clamp(66px, 17vw, 123px);
+        right: 9vw;
+        height: 54vw;
+        max-height: 352px;
+        border-radius: 0 180px 180px 0;
+        width: 100vw;
+        background-color: $soft-blue;
+        z-index: -1;
+      }
+    }
+
+    .contentBody {
+      justify-content: center;
+      margin: auto;
+      animation: tabInfoSlide 1000ms ease-in-out;
+
+      button {
+        background: $soft-blue;
+        color: $white;
+
+        &:hover {
+          color: $soft-blue;
+          border: 2px solid $soft-blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    .content {
+      ul {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid $grayish-blue;
+
+        li {
+          .nav-link {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $grayish-blue;
+            border-top: 1px solid $grayish-blue;
+            justify-content: space-around;
+
+            &:nth-child(1) {
+              width: 100%;
+            }
+
+            &.active {
+              padding-top: 1rem;
+              border-bottom: 3px solid $soft-red;
+              width: auto;
+              margin: 0 auto;
+              border-radius: 0 !important;
+            }
+          }
+        }
+      }
+
+      .image {
+        padding-top: 3rem;
+        width: 77%;
+        margin: 0 auto;
+        max-height: 17rem;
+        height: auto;
+
+        &::before {
+          top: clamp(66px, 17vw, 123px);
+          height: 50vw;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+
+          &:nth-child(1) {
+            height: 18rem;
+          }
+        }
+      }
+
+      .contentBody {
+        padding-top: 10rem;
+        text-align: center;
+
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
