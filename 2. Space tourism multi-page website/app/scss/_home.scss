@@ -1,0 +1,128 @@
+.hero {
+  margin-bottom: 5rem;
+}
+.hero-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero__container {
+  width: 430px;
+
+  .hero__header {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: $lightBlue;
+  }
+  .hero__title {
+    text-transform: uppercase;
+    font-size: 9rem;
+    font-family: 'Bellefair', serif;
+    font-weight: 200;
+  }
+
+  .hero__description {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: $lightBlue;
+  }
+}
+
+.btn__explore {
+  width: 16rem;
+  height: 16rem;
+  display: block;
+  text-align: center;
+  line-height: 16rem;
+  border-radius: 15rem;
+  font-family: 'Bellefair', serif;
+  border-style: none;
+  cursor: pointer;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: $white;
+  color: $black;
+
+  &:hover {
+    box-shadow: 10px 5px 10px 5px rgba(180, 180, 180, 0.3);
+    box-shadow: 0px 0px 0px 40px rgba(255, 255, 255, 0.145);
+    transition: all 0.3s ease-in;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    margin: 2rem 0 4rem;
+  }
+  .hero-grid {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero__container {
+    width: 100%;
+    text-align: center;
+
+    .hero__header {
+      font-size: 1.3rem;
+      letter-spacing: 3px;
+    }
+
+    .hero__title {
+      font-size: 9.5rem;
+    }
+
+    .hero__description {
+      width: 445px;
+      text-align: center;
+      margin: 0 auto 6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .hero {
+    margin: 2rem;
+  }
+
+  .hero__container {
+    .hero__header {
+      font-size: 2rem;
+      letter-spacing: 4px;
+    }
+    .hero__title {
+      font-size: 9rem;
+      margin: 1.2rem 0 1.7rem;
+    }
+    .hero__description {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero__container {
+    .hero__header {
+      font-size: 1rem;
+      letter-spacing: 3px;
+    }
+    .hero__title {
+      font-size: 5rem;
+    }
+    .hero__description {
+      font-size: 1rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .btn__explore {
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    font-size: 1rem;
+  }
+}

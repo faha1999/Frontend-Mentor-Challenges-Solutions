@@ -1,4 +1,5 @@
 # Frontend-Mentor-Challenges
+
 Here is the collection of all my Frontend Mentor challenge solutions. You can find links to live demos and challenges on Frontend Mentor if you want to try them out.
 
 ## Project setup
@@ -25,6 +26,10 @@ npm run build
 
 <a href="https://faha1999.github.io/easybank-landing-page/">Live</a> | <a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN">Try Out</a>
 
-### Easybank
+### Space tourism multi-page website
 
-<a href="">Live</a> | <a href="">Try Out</a>
+<a href="https://faha1999.github.io/Space-tourism/home.html">Live</a> | <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Try Out</a>
+
+<!-- ### Easybank
+
+<a href="">Live</a> | <a href="">Try Out</a> -->

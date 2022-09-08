@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./app/images/favicon-32x32.png">
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <link rel="stylesheet" href="./app/css/style.min.css">
+
+    <style>
+        body {
+            background-image: url('./app/images/destination/background-destination-desktop.jpg');
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                height: auto;
+                background-image: url('./app/images/destination/background-destination-tablet.jpg');
+            }
+        }
+
+        @media screen and (max-width: 510px) {
+            body {
+                min-height: 100vh;
+                height: auto;
+                background-image: url('./app/images/destination/background-destination-mobile.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <nav class="header-grid">
+
+          <a href="./home.html" title="Home">
+            <img src="./app/images/shared/logo.svg" alt="logo" />
+          </a>
+
+          <div class="hamburger">
+            <img src="./app/images/shared/icon-hamburger.svg" alt="icon-hamburger" id="hamburger">
+            <img src="./app/images/shared/icon-close.svg" alt="icon-close" id="close">
+          </div>
+
+          <ul class="menu" id="menu">
+            <li class="menu__item">
+              <a href="home.html"><strong>00</strong> Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="./destination.html" class="selected"><strong>01</strong> Destination</a>
+            </li>
+            <li class="menu__item">
+              <a href="./crew.html"><strong>02</strong> Crew</a>
+            </li>
+            <li class="menu__item">
+              <a href="./technology.html"><strong>03</strong> Technology</a>
+            </li>
+          </ul>
+
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start destination -->
+    <section class="destination">
+        <div class="wrapper">
+          <div class="destination-grid">
+
+            <section class="destination__picture">
+              <h2 class="destination__subtitle">
+                <span>01</span> Pick your destination
+              </h2>
+              <img src="./app/images/destination/image-moon.png" alt="destination" id="picture" class="opacity"/>
+            </section>
+
+            <article class="destination__container">
+
+              <header class="destination__header">
+                <nav>
+                  <ul class="destination__menu">
+                    <li class="destination__menu__item destination__menu__item--active">Moon</li>
+                    <li class="destination__menu__item hover">Mars</li>
+                    <li class="destination__menu__item hover">Europa</li>
+                    <li class="destination__menu__item hover">Titan</li>
+                  </ul>
+                </nav>
+              </header>
+
+              <h1 class="destination__title" id="title">Moon</h1>
+              <p class="destination__description" id="desc">
+                See our planet as you’ve never seen it before. A perfect relaxing
+                trip away to help regain perspective and come back refreshed.
+                While you’re there, take in some history by visiting the Luna 2
+                and Apollo 11 landing sites.
+              </p>
+
+              <div class="destination__info__container">
+                <div class="destination__info">
+                  <span class="info__title"> Avg. distance </span>
+                  <span class="info__date" id="distance"> 384,400 km </span>
+                </div>
+
+                <div class="destination__info">
+                  <span class="info__title"> Est. travel time </span>
+                  <span class="info__date" id="time"> 3 days </span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    <!-- End destination -->
+    
+    <script src="./app/js/app.js"></script>
+    <script src="./app/js/destination.js"></script>
+</body>
+</html>

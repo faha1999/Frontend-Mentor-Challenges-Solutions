@@ -1,0 +1,233 @@
+.technology {
+  .wrapper {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-areas: 'header picture' 'info picture';
+  margin-bottom: 1.5rem;
+
+  .technology__header {
+    grid-area: header;
+    margin-top: 0.5rem;
+
+    .header__subtitle {
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 1.8rem;
+
+      span {
+        color: $veryDarkGray;
+        font-weight: 600;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+
+  .technology__container {
+    grid-area: info;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 4rem;
+
+      .tech__menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        margin-top: 1.5rem;
+
+        li {
+          list-style-type: none;
+          width: 5.5rem;
+          height: 5.5rem;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+          display: block;
+          text-align: center;
+          line-height: 5.5rem;
+          font-size: 1.75rem;
+          font-weight: 200;
+          font-family: 'Bellefair', serif;
+          cursor: pointer;
+          border: 1px solid #a0a0a0;
+          background-color: transparent;
+
+          &.active {
+            background-color: $white;
+            color: $black;
+          }
+        }
+      }
+
+      .technology__title {
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+        font-size: 3.2rem;
+        font-weight: 400;
+        margin: 1rem 0 2rem;
+      }
+
+      .technology__subtitle {
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+        font-size: 1rem;
+        font-weight: 200;
+        color: $darkGray;
+      }
+
+      .technology__description {
+        width: 400px;
+        color: $lightBlue;
+        line-height: 1.6rem;
+        letter-spacing: 0.76px;
+      }
+    }
+  }
+
+  .technology__picture {
+    grid-area: picture;
+    justify-self: end;
+  }
+}
+
+.hover:hover {
+  border: 1px solid $veryDarkGray;
+  color: $darkGray;
+}
+
+@media screen and (max-width: 1024px) {
+  .technology {
+    .wrapper {
+      margin: 0 0 0 1rem;
+      padding: 2rem 0 0 2rem;
+    }
+  }
+
+  .technology-grid {
+    .technology__picture img {
+      width: 370px;
+    }
+
+    .content {
+      width: 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .technology {
+    .wrapper {
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+  }
+
+  .technology-grid {
+    grid-template-areas: 'header' 'picture' 'info';
+    margin-bottom: 1.5rem;
+    justify-items: center;
+    justify-content: center;
+
+    .technology__header {
+      margin-bottom: 3rem;
+      justify-self: start;
+    }
+
+    .technology__container {
+      width: 100%;
+
+      .content {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+        .tech__menu {
+          width: 100%;
+          flex-direction: row;
+          margin: 2rem auto;
+          justify-content: space-around;
+
+          li {
+            display: inline-block;
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+
+    .technology__picture img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .technology {
+    .wrapper {
+      padding: 2rem 0;
+    }
+  }
+
+  .technology-grid {
+    .technology__header {
+      justify-self: auto;
+
+      .header__subtitle {
+        font-size: 1.5rem;
+      }
+    }
+
+    .technology__container {
+      .technology__subtitle {
+        font-size: 1rem;
+      }
+
+      .tech__menu li {
+        margin-top: 0;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .technology-grid {
+    .header__subtitle {
+      font-size: 1.5rem;
+    }
+
+    .technology__container {
+      .technology__title {
+        font-size: 2rem;
+      }
+
+      .technology__description {
+        width: 100%;
+        padding: 0 1.5rem;
+      }
+      .tech__menu li {
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
+        margin: 0 0.6rem;
+      }
+    }
+  }
+}

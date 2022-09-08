@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Bellefair&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.wrapper {
+  padding: 2rem;
+  margin: 0 8rem;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: $white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background-image: url('../images/home/background-home-mobile.jpg');
+  }
+
+  .wrapper {
+    padding: 2rem 0 0;
+    margin: 0 1rem;
+  }
+}
+
+#picture,
+#title,
+#desc,
+#time,
+#distance {
+  transition: opacity 0.4s ease;
+}
