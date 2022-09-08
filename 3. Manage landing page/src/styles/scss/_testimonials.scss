@@ -1,0 +1,72 @@
+.Testimonials {
+  text-align: center;
+
+  h2 {
+    font-size: 3rem;
+    color: $dark-blue;
+    font-weight: $bold;
+  }
+
+  .cardBody {
+    margin-top: 2rem;
+    background: $very-light-gray;
+    position: relative;
+    min-height: 23rem;
+
+    img {
+      position: absolute;
+      top: -3.5rem;
+      width: 7.2rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: $dark-blue;
+      font-weight: $medium;
+      padding-top: 5rem;
+    }
+
+    .cardText {
+      width: 90%;
+      margin: 0 auto;
+
+      p {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Testimonials {
+    .cardBody {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+
+    .swiper-pagination {
+      display: block;
+      margin-top: 3rem;
+      position: relative;
+
+      .swiper-pagination-bullet {
+        border: 1px solid $bright-red;
+        background: transparent;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: $bright-red;
+      }
+    }
+  }
+}

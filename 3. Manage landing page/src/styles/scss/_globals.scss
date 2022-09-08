@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  outline: none !important;
+  transition: 0.4 ease-in-out;
+}
+
+html::-webkit-scrollbar {
+  width: 0px; /* For Chrome, Safari, and Opera */
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scroll-behavior: smooth;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 1.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-weight: $regular;
+  font-size: 1.25rem;
+}
+
+button {
+  background-color: #f25f3a;
+  padding: 1rem 2rem;
+  border: 0px;
+  border-radius: 4.5rem;
+  -webkit-box-shadow: 0px 12px 10px -5px rgb(242 95 58 / 60%);
+  box-shadow: 0px 12px 10px -5px rgb(242 95 58 / 60%);
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 1.32rem;
+
+  &:hover {
+    background-color: #f79a82;
+  }
+}
+
+.bgTop {
+  max-width: 63.6rem;
+  position: absolute;
+  right: -13rem;
+  top: -11rem;
+  width: 116%;
+  z-index: -555;
+}
+
+p {
+  color: #9095a7;
+  line-height: 2.7rem;
+  margin-bottom: 3rem;
+}
+
+section {
+  margin-bottom: 7rem;
+}

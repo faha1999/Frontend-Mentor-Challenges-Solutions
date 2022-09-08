@@ -1,0 +1,133 @@
+footer {
+  background: $very-dark-blue;
+  height: auto;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  a {
+    color: $very-pale-red;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $bright-red;
+    }
+  }
+
+  .down {
+    padding-top: 5rem;
+  }
+
+  .socialIcons {
+    a {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .commonItems {
+    a {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 1rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .right {
+    text-align: right;
+
+    input {
+      border: 1px solid transparent;
+      border-radius: 3rem;
+      height: 4rem;
+      font-size: 1.2rem;
+      padding: 1rem;
+      margin-right: 1rem;
+    }
+
+    button {
+      box-shadow: none;
+      width: 6rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $very-pale-red;
+
+    a {
+      color: $bright-red;
+    }
+  }
+
+  .mobileDisplay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    text-align: center;
+
+    .logo {
+      padding-top: 10rem;
+    }
+
+    .right {
+      text-align: center;
+    }
+
+    .desktopView {
+      display: none;
+    }
+
+    .mobileDisplay {
+      display: block;
+    }
+
+    .commonItems {
+      padding-left: 4rem;
+    }
+
+    .socialIcons {
+      padding-bottom: 5rem;
+
+      a {
+        margin-right: 3rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+
+    .right {
+      input {
+        width: 15rem;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

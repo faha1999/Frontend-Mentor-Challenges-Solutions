@@ -30,6 +30,10 @@ npm run build
 
 <a href="https://faha1999.github.io/Space-tourism/home.html">Live</a> | <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Try Out</a>
 
+### Manage landing page
+
+<a href="https://manage-landing-page-faha1999.netlify.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->
