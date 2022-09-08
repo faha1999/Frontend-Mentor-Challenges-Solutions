@@ -38,6 +38,10 @@ npm run build
 
 <a href="https://fylo-dark-theme-landing-page-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd">Try Out</a>
 
+### Room homepage
+
+<a href="https://room-homepage-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->
