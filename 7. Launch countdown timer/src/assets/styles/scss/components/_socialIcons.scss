@@ -1,0 +1,28 @@
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+  z-index: 1;
+
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 1rem;
+
+    color: $GrayishBlue;
+    fill: $GrayishBlue;
+    transition: 3ms;
+
+    &:hover {
+      color: $SoftRed;
+      fill: $SoftRed;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .SocialIcons {
+    margin-bottom: 2rem;
+  }
+}

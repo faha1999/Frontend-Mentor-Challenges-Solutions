@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: $fontFamily;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: $GrayishBlue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 3rem);
+  background-image: url(../../images/bg-stars.svg);
+  background-color: $darkBlue;
+  background-size: contain;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: $White;
+  margin-top: 10vh;
+  text-transform: uppercase;
+}
+
+.hills {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 23vh;
+  background-image: url('../../images/pattern-hills.svg');
+  background-size: cover;
+  background-position: top center;
+}
+
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 12vh;
+  }
+
+  .hills {
+    height: 30vh;
+    background-size: ste;
+    background-position-x: 80%;
+  }
+}
