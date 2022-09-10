@@ -50,6 +50,10 @@ npm run build
 
 <a href="https://launch-countdown-timer-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-">Try Out</a>
 
+### Interactive comments section
+
+<a href="https://interactive-comments-section-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->
