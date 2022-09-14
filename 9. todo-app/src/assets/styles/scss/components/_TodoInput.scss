@@ -1,0 +1,33 @@
+.TodoInputWrapper {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  .todoInput {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 17px;
+    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.4);
+
+    .addBtn {
+      width: 25px;
+      height: 24px;
+      font-size: 0;
+      background: transparent;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    input {
+      width: 100%;
+      padding: 23.5px 20px 20.5px;
+      background: transparent;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        opacity: 1;
+      }
+    }
+  }
+}

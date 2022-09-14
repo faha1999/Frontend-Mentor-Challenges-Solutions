@@ -1,0 +1,37 @@
+.todo-filter {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &::after {
+    content: 'Drag and drop to reorder list';
+    position: absolute;
+    width: 100%;
+    padding-block: 1rem;
+    top: 120%;
+    left: 0;
+    text-align: center;
+  }
+
+  p {
+    cursor: pointer;
+  }
+
+  .active {
+    color: hsl(220, 98%, 61%);
+  }
+}
+
+@media (max-width: 600px) {
+  .todo-filter {
+    position: absolute;
+    width: 100%;
+    min-height: 2.5rem;
+    border-radius: 0.25rem;
+    top: 200%;
+    justify-content: center;
+    left: 0;
+    box-shadow: 0px 10px 20px 1px #10101021;
+  }
+}

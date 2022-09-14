@@ -54,6 +54,10 @@ npm run build
 
 <a href="https://interactive-comments-section-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9">Try Out</a>
 
+### Todo app
+
+<a href="https://todo-app-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

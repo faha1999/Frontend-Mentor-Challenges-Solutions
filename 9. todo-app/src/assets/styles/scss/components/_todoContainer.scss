@@ -1,0 +1,27 @@
+.todo-container {
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0px 45px 20px 10px #10101021;
+
+  &.todo:nth-child(1) {
+    border-radius: var(--bg-rad) var(--bg-rad) 0 0;
+  }
+}
+
+.no-todo {
+  width: 100%;
+  text-align: center;
+  margin-top: 10rem;
+  position: relative;
+
+  &::after {
+    content: 'Your todos will appear here';
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 120%;
+    left: 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}

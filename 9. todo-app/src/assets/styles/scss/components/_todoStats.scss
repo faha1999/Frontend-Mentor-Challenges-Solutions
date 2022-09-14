@@ -1,0 +1,21 @@
+.todo-stats {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 0.25rem 0.25rem;
+  position: relative;
+}
+
+.clear-completed {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .todo-stats {
+    position: relative;
+  }
+}

@@ -1,0 +1,12 @@
+@import './globals';
+@import './app';
+
+// components
+@import './components/header';
+@import './components/TodoInput';
+@import './components/toDo';
+@import './components/filters';
+@import './components/todoStats';
+@import './components/todoContainer';
+
+@import './footer';

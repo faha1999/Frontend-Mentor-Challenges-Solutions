@@ -1,0 +1,49 @@
+.toDoContainer {
+  min-height: 100vh;
+  background-image: url(../../images/bg-mobile-dark.jpg);
+  background-size: 100% 230px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+[data-theme='light'] .toDoContainer {
+  background-image: url(../../images/bg-mobile-light.jpg);
+}
+
+@media (min-width: 38em) {
+  .toDoContainer {
+    background-size: 100% 280px;
+    background-image: url(../../images/bg-desktop-dark.jpg);
+  }
+  [data-theme='light'] .toDoContainer {
+    background-image: url(../../images/bg-desktop-light.jpg);
+  }
+}
+
+.container {
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.items-filters-clear-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px 16px;
+}
+
+@media (min-width: 38em) {
+  .container {
+    width: 550px;
+  }
+}
+
+.drag-drop-line {
+  position: absolute;
+  bottom: 25px;
+  font-weight: 500;
+  opacity: 0;
+}

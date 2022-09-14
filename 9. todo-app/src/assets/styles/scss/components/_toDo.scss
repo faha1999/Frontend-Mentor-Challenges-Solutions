@@ -1,0 +1,67 @@
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  background: none;
+  border: 1px solid hsl(234, 39%, 85%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.circle-gradient {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: url(../../images/icon-check.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.todo {
+  width: 100%;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  padding-left: 4rem;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  position: relative;
+  cursor: grab;
+
+  .circle:hover {
+    border-color: hsl(280, 87%, 65%);
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  p {
+    padding-right: 0.5rem;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+}
+
+.completed p {
+  text-decoration: line-through;
+}
+
+@media (max-width: 600px) {
+  .circle {
+    left: 1rem;
+  }
+}
