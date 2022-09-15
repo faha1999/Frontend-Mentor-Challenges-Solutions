@@ -1,0 +1,52 @@
+.lightbox-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.486);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .lightbox {
+    position: relative;
+    width: 550px;
+    aspect-ratio: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    img {
+      border-radius: 0.5rem;
+    }
+
+    .close-icon {
+      cursor: pointer;
+      align-self: end;
+
+      &:hover path {
+        fill: $Orange;
+      }
+    }
+
+    .thumbnail-wrapper {
+      align-self: center;
+    }
+
+    .lightbox-control {
+      display: flex;
+      width: 56px;
+    }
+
+    .control-prev {
+      top: 45%;
+      left: -5%;
+      transform: translateY(-45%);
+    }
+
+    .control-next {
+      top: 45%;
+      right: -5%;
+      transform: translateY(-45%);
+    }
+  }
+}

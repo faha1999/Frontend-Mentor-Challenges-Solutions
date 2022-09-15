@@ -1,0 +1,137 @@
+.product {
+  margin-top: 5.625rem;
+
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7.8125rem;
+
+    .product-image {
+      flex-direction: column;
+      gap: 2rem;
+
+      img {
+        cursor: pointer;
+        border-radius: 0.5rem;
+      }
+
+      .thumbnail-wrapper {
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+
+    .product-description {
+      padding-block: 3.875rem;
+      margin-top: 1.5rem;
+
+      .discounted-price {
+        align-items: center;
+        margin-bottom: 0.5rem;
+        gap: 1rem;
+
+        .offer {
+          border-radius: 0.5rem;
+          padding: 0.25rem 0.5rem;
+          background-color: $Orange 0.25;
+        }
+      }
+
+      .action-wrapper {
+        align-items: center;
+        gap: 1rem;
+
+        .product-quantity {
+          gap: 3.5rem;
+          align-items: center;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          background-color: $LightGrayishBlue;
+
+          & > img:hover,
+          & > img:focus {
+            cursor: pointer;
+            filter: opacity(0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 64em) {
+  .product {
+    margin-top: 3rem;
+
+    .product-container {
+      padding-inline: 2rem;
+      gap: 2rem;
+
+      .product-image {
+        .thumbnail-wrapper {
+          justify-content: center;
+        }
+      }
+
+      .product-description {
+        padding-block: 2rem;
+
+        .action-wrapper {
+          flex-direction: column;
+          align-items: stretch;
+
+          .product-quantity {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .product {
+    margin-top: 0;
+
+    .product-container {
+      grid-template-columns: 1fr;
+      padding: 0;
+
+      .product-image {
+        position: relative;
+
+        img {
+          cursor: none;
+          border-radius: 0;
+        }
+
+        .lightbox-control {
+          width: 40px;
+        }
+
+        .control-prev {
+          top: 50%;
+          left: 5%;
+        }
+
+        .control-next {
+          top: 50%;
+          right: 5%;
+        }
+
+        .thumbnail-wrapper {
+          display: none;
+        }
+      }
+
+      .product-description {
+        padding-inline: 1.5rem;
+
+        .product-price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

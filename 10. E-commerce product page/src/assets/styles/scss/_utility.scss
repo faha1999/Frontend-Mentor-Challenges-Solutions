@@ -1,0 +1,95 @@
+.container-lg {
+  width: min(100% - 3rem, 1110px);
+  margin-inline: auto;
+}
+
+.container-md {
+  width: min(100%, 1015px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.flow > * + * {
+  margin-top: 1.5rem;
+}
+
+.Orange {
+  color: $Orange;
+}
+
+.blue {
+  color: $blue;
+}
+
+.darkGrayishBlue {
+  color: $darkGrayishBlue;
+}
+
+.GrayishBlue {
+  color: $GrayishBlue;
+}
+
+.fs-800 {
+  font-size: $fs-800;
+}
+
+.fs-700 {
+  font-size: $fs-700;
+}
+
+.fs-400 {
+  font-size: $fs-400;
+}
+
+.fs-100 {
+  font-size: $fs-100;
+}
+
+.fw-400 {
+  font-weight: $fw-400;
+}
+
+.fw-700 {
+  font-weight: $fw-700;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.line-height-500 {
+  line-height: 1.625;
+}
+
+.line-height-300 {
+  line-height: 1.1;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 2.73px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.position-relative {
+  position: relative;
+}

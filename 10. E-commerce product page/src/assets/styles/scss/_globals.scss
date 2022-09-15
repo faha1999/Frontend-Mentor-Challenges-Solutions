@@ -1,0 +1,143 @@
+@media (max-width: 64em) {
+  :root {
+    $fs-800: 2rem;
+    $fs-400: 0.9375rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  :root {
+    $fs-800: 1.7rem;
+    $fs-300: 1.125rem;
+    $fs-100: 0.75rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  position: relative;
+  font-family: $font-primary;
+  font-size: $fs-400;
+  background-color: $white;
+}
+
+.btn {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: $Orange;
+  color: $white;
+  box-shadow: 0 10px 10px 1px #ff7d1a70;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $Orange;
+  opacity: 0.5;
+}
+
+.lightbox-control {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+
+  &:hover svg path,
+  &:focus svg path {
+    stroke: $Orange;
+  }
+}
+
+.thumbnail {
+  border-radius: 0.5rem;
+  background-color: $white;
+
+  & > img {
+    cursor: pointer;
+    width: 88px;
+    aspect-ratio: 1;
+
+    & > img:hover,
+    & > img:focus {
+      filter: opacity(0.5);
+    }
+  }
+
+  .active {
+    filter: opacity(0.35);
+    border: 1px solid $Orange;
+  }
+}

@@ -58,6 +58,10 @@ npm run build
 
 <a href="https://todo-app-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW">Try Out</a>
 
+### E-commerce product page
+
+<a href="https://e-commerce-product-page-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->
