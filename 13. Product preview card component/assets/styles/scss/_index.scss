@@ -1,0 +1,137 @@
+.product {
+  max-width: 590px;
+  display: flex;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  & > div {
+    width: 50%;
+  }
+
+  .image {
+    background: url('../../images/image-product-desktop.jpg') no-repeat center
+      center / cover;
+  }
+
+  .product-info {
+    background-color: $White;
+    padding: 2rem;
+
+    .category {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin: 1.5rem 0;
+    }
+
+    .description {
+      margin-bottom: 1.3rem;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .sale-price,
+    .price {
+      font-size: 2rem;
+      color: $DarkCyan;
+      margin-bottom: 1.5rem;
+    }
+
+    .sale-price + .price {
+      font-size: 14px;
+      color: $grayishBlue;
+      padding: 0 1.2rem;
+      text-decoration: line-through;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      background-color: $DarkCyan;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 500;
+      color: $White;
+      text-align: center;
+      padding: 0.75rem;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: hsl(158, 36%, 24%);
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 668px) {
+  .product {
+    flex-direction: column;
+    margin: 0 2rem;
+
+    & > div {
+      width: 100%;
+    }
+
+    .image {
+      height: 250px;
+      background: url('../../images/image-product-mobile.jpg') no-repeat center
+        center / cover;
+    }
+  }
+}
+
+footer {
+  .attribution {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    background-image: url('../../images/faha1999.webp');
+    background-size: 100%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    z-index: 99;
+    padding: 1rem;
+    border: 1px solid hsl(233, 11%, 84%);
+    bottom: 1rem;
+
+    p {
+      visibility: hidden;
+      position: fixed;
+      bottom: 1rem;
+      right: 5rem;
+      width: 12.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0 1rem;
+      font-size: 0.6rem;
+      text-align: left;
+      letter-spacing: 0.2rem;
+      z-index: 999;
+      box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+      transition: 0.8s cubic-bezier(0.06, 0.8, 0.1, 1);
+      line-height: 1rem;
+
+      a {
+        color: $DarkCyan;
+        font-size: 700;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:hover p {
+      visibility: visible;
+      background: $White;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $grayishBlue;
+  background-color: $Cream;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: 'Fraunces', serif;
+  line-height: 1;
+  color: $blue;
+}
+
+a {
+  text-decoration: none;
+}
