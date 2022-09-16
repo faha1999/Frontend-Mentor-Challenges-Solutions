@@ -62,6 +62,10 @@ npm run build
 
 <a href="https://e-commerce-product-page-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6">Try Out</a>
 
+### QR code component
+
+<a href="https://faha1999.github.io/qr-code-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->
