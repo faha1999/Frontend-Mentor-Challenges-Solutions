@@ -66,6 +66,10 @@ npm run build
 
 <a href="https://faha1999.github.io/qr-code-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H">Try Out</a>
 
+### NFT preview card component
+
+<a href="https://faha1999.github.io/NFT-preview-card-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

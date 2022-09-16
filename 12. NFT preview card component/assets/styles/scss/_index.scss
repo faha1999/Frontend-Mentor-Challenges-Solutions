@@ -1,0 +1,162 @@
+#main {
+  background: $mainBG;
+  background-blend-mode: exclusion;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft {
+  &-card {
+    max-width: $card-width;
+    padding: 1rem;
+    border-radius: $br-15;
+    background-color: $cardBG;
+    box-shadow: darken($mainBG, 1%) 0px 14px 28px,
+      darken($mainBG, 1%) 0px 10px 10px;
+    transition: 0.4s ease;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+    transform: perspective(1px) translateZ(0);
+  }
+
+  &-card-image {
+    position: relative;
+    display: block;
+    height: 320px;
+    overflow: hidden;
+    border-radius: $br-10;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transform: scale(0);
+      background-color: transparentize($cyan, 0.5);
+      transition: transform 0.4s ease-in-out, opacity 0.3s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &::after {
+      content: url(../../images/icon-view.svg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.2s ease-in 0.1s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  &-card-title {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+
+  &-card-lead {
+    margin-bottom: 1rem;
+  }
+
+  &-market {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .eth {
+      display: flex;
+      gap: 0.4rem;
+      font-size: inherit;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $cyan;
+    }
+
+    & img {
+      width: 15px;
+    }
+  }
+
+  &-card-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    border-top: 1px solid $line;
+    padding: 1rem 0;
+
+    img {
+      width: 35px;
+      height: 35px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+    }
+  }
+}
+
+footer {
+  .attribution {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    background-image: url('../../images/faha1999.webp');
+    background-size: 100%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    z-index: 99;
+    padding: 1rem;
+    border: 1px solid hsl(233, 11%, 84%);
+    bottom: 1rem;
+
+    p {
+      visibility: hidden;
+      position: fixed;
+      bottom: 1rem;
+      right: 5rem;
+      width: 12.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0 1rem;
+      font-size: 0.6rem;
+      text-align: left;
+      letter-spacing: 0.2rem;
+      z-index: 999;
+      box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+      transition: 0.8s cubic-bezier(0.06, 0.8, 0.1, 1);
+      line-height: 1rem;
+
+      a {
+        color: hsl(220, 98%, 61%);
+        font-size: 700;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:hover p {
+      visibility: visible;
+      background: $White;
+    }
+  }
+}
