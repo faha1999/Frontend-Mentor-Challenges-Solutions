@@ -74,6 +74,10 @@ npm run build
 
 <a href="https://faha1999.github.io/Product-preview-card-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa">Try Out</a>
 
+### Order summary component
+
+<a href="https://faha1999.github.io/Order-summary-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

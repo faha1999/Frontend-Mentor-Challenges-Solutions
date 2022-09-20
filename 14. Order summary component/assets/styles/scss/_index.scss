@@ -1,0 +1,95 @@
+.orderCard {
+  width: 420px;
+  margin: 1.5rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+
+  .content {
+    padding: 2.4rem;
+    text-align: center;
+
+    a {
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    & > p {
+      margin-bottom: 1.3rem;
+    }
+
+    .plan {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 20px;
+      background-color: $VeryPaleBlue;
+
+      h2 {
+        font-size: 16px;
+        margin-bottom: 0.2rem;
+      }
+
+      & > a {
+        justify-self: flex-end;
+
+        &:hover,
+        &:focus {
+          text-decoration: none !important;
+        }
+      }
+
+      .pricing {
+        text-align: left;
+        flex: 1;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      background-color: $BrightBlue;
+      box-shadow: $DesaturatedBlue 0px 8px 17px;
+
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+
+    .cancelBtn {
+      text-decoration: none;
+      color: $DesaturatedBlue;
+
+      &:hover,
+      &:focus {
+        color: $DarkBlue;
+      }
+    }
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+}

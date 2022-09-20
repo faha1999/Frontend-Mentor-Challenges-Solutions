@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $DesaturatedBlue;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $DarkBlue;
+  font-weight: 900;
+  line-height: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: $PaleBlue url('../../images/pattern-background-desktop.svg')
+    no-repeat center -20% / contain;
+}
+
+@media (max-width: 640px) {
+  main {
+    background: url('../../images/pattern-background-mobile.svg') no-repeat
+      center center / cover;
+  }
+}
