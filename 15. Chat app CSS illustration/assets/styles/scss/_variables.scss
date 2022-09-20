@@ -1,0 +1,19 @@
+$LightViolet: hsl(264, 100%, 61%);
+$LightMagenta: hsl(293, 100%, 63%);
+$White: hsl(0, 0%, 100%);
+$LightGrayishViolet: hsl(290, 37%, 97%);
+
+$ModerateViolet: hsl(276, 55%, 52%);
+$DarkDesaturatedViolet: hsl(271, 36%, 24%);
+$DarkGrayishViolet: hsl(268, 7%, 64%);
+
+$bs-mobile: 10px 20px 40px 2px rgba(0, 0, 0, 0.2);
+$bs-chat: 1px 1px 40px rgba(0, 0, 0, 0.1);
+
+$chat-gradient: linear-gradient(to right, $LightViolet, $LightMagenta);
+$bg-gradient: linear-gradient(
+  45deg,
+  $LightViolet 0%,
+  $LightViolet 40%,
+  $LightMagenta 100%
+);

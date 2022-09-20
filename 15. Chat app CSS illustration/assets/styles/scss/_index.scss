@@ -1,0 +1,288 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+  max-width: 62.5rem;
+  width: 60%;
+  margin: 0 auto;
+
+  .mobileContainer {
+    min-width: 16.875rem;
+    background-color: $White;
+    border-radius: 1.875rem;
+    box-shadow: $bs-mobile;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .screenContainer {
+      display: flex;
+      flex-direction: column;
+      width: 15.625rem;
+      margin: 0.7em 0;
+      background-color: $White;
+      border-radius: 1.875rem;
+
+      .mobileCamere {
+        height: 1.875rem;
+        width: 8.125rem;
+        background-color: $White;
+        border-radius: 3.125rem;
+        position: absolute;
+        top: 0;
+        left: 4.375rem;
+      }
+
+      .chatTopPanel {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        color: $LightGrayishViolet;
+        padding: 2em 1em 1em;
+        background-image: linear-gradient(
+          to right,
+          $LightViolet,
+          $LightMagenta
+        );
+        border-bottom-left-radius: 0.3125rem;
+        border-bottom-right-radius: 0.3125rem;
+        border-top-left-radius: 1.5625rem;
+        border-top-right-radius: 1.5625rem;
+
+        .topAvatar {
+          width: 1.875rem;
+          height: 1.875rem;
+          border: 1px solid $White;
+          border-radius: 50%;
+        }
+
+        .topArrow::before {
+          content: '<';
+        }
+
+        .chatTopPanelDots {
+          line-height: 0.3;
+          margin-left: 3em;
+
+          &::after,
+          &::before {
+            content: '.';
+            display: block;
+          }
+        }
+
+        .id-info,
+        .id-name {
+          color: $LightGrayishViolet;
+        }
+
+        .id-name {
+          margin: 0;
+        }
+      }
+
+      .leftContainer,
+      .priceContainer {
+        border-radius: 0.9375rem;
+        border-bottom-left-radius: 0.3125rem;
+        margin-left: 0.5em;
+      }
+
+      .leftContainer {
+        transform: translateX(-1.875rem);
+        color: $LightGrayishViolet;
+        background-color: $LightGrayishViolet;
+
+        .leftText {
+          color: $ModerateViolet;
+        }
+      }
+
+      .leftContainer,
+      .RightContainer {
+        padding: 0.5em;
+        width: 9.375rem;
+        box-shadow: $bs-chat;
+      }
+
+      .leftContainer,
+      .RightContainer,
+      .priceContainer,
+      .imgContainer {
+        opacity: 0;
+        margin-top: 0.5em;
+        animation: slideIn ease-in 1s forwards, fadeIn ease-in 1s forwards;
+      }
+
+      .leftContainer p,
+      .RightContainer p {
+        font-weight: 500;
+      }
+
+      .RightContainer {
+        transform: translateX(1.875rem);
+        color: $DarkDesaturatedViolet;
+        background-color: $White;
+        border-radius: 0.9375rem;
+        border-bottom-right-radius: 0.3125rem;
+        align-self: flex-end;
+        margin-right: 0.5em;
+      }
+
+      .id-info,
+      .leftText,
+      .RightText,
+      .walkTime,
+      .msgPlaceholder {
+        font-size: 0.55rem;
+      }
+
+      .imgContainer {
+        transform: translateX(1.875rem);
+        display: flex;
+        align-self: flex-end;
+
+        .dogImg {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 0.625rem;
+          margin-right: 0.5em;
+        }
+      }
+
+      .priceContainer {
+        transform: translateX(-1.875rem);
+        width: 12.5rem;
+        padding: 0.5em 1em;
+        background-image: linear-gradient(to left, $LightViolet, $LightMagenta);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .walkTime,
+        .priceAmount {
+          margin: 0;
+          padding-left: 2em;
+          color: $LightGrayishViolet;
+        }
+
+        .priceAmount {
+          font-weight: 700;
+          font-size: 0.8rem;
+        }
+
+        .walkTime::before {
+          content: '';
+          position: absolute;
+          width: 0.9375rem;
+          height: 0.9375rem;
+          border: 1px solid $LightGrayishViolet;
+          border-radius: 50%;
+          top: 0.625rem;
+          left: 0.625rem;
+          color: $LightGrayishViolet;
+        }
+      }
+
+      .msgSendContainer {
+        margin: 0.7em;
+        padding: 0.4em 0.5em;
+        background-color: $White;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 1.5625rem;
+      }
+
+      .msgSendBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2em;
+        width: 1.875rem;
+        height: 1.875rem;
+        border-radius: 50%;
+        background-color: $DarkDesaturatedViolet;
+        color: $White;
+        font-weight: 700;
+
+        .msgPlaceholder {
+          padding-left: 1em;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .attribution {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    background-image: url('../../images/faha1999.webp');
+    background-size: 100%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    z-index: 99;
+    padding: 1rem;
+    border: 1px solid hsl(233, 11%, 84%);
+    bottom: 1rem;
+
+    p {
+      visibility: hidden;
+      position: fixed;
+      bottom: 1rem;
+      right: 5rem;
+      width: 12.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0 1rem;
+      font-size: 0.6rem;
+      text-align: left;
+      letter-spacing: 0.2rem;
+      z-index: 999;
+      box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+      transition: 0.8s cubic-bezier(0.06, 0.8, 0.1, 1);
+      line-height: 1rem;
+
+      a {
+        color: $LightMagenta;
+        font-size: 700;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:hover p {
+      visibility: visible;
+      background: $White;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    gap: 3em;
+    flex-direction: column;
+    width: 90%;
+    max-width: 25rem;
+
+    .mobileContainer {
+      margin-top: 5em;
+    }
+
+    .content {
+      margin-bottom: 3rem;
+      .contentTitle {
+        text-align: center;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

@@ -78,6 +78,10 @@ npm run build
 
 <a href="https://faha1999.github.io/Order-summary-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj">Try Out</a>
 
+### Chat app CSS illustration
+
+<a href="https://faha1999.github.io/Chat-app-CSS-illustration/">Live</a> | <a href="https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->
