@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: hsl(212, 23%, 69%);
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(217, 19%, 35%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(217, 19%, 35%);
+  line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 15px;
+  }
+}

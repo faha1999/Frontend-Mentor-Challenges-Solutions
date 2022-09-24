@@ -90,9 +90,9 @@ npm run build
 
 <a href="https://faha1999.github.io/Testimonials-grid-section/">Live</a> | <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">Try Out</a>
 
-<!-- ### Easybank
+### Article preview component
 
-<a href="">Live</a> | <a href="">Try Out</a> -->
+<a href="https://faha1999.github.io/Article-preview-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT">Try Out</a>
 
 <!-- ### Easybank
 

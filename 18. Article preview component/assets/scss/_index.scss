@@ -1,0 +1,246 @@
+.article {
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  max-width: 45rem;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 0.625rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0rem 0.5rem 1.5rem;
+
+  .image {
+    border-radius: 0.625rem 0 0 0.625rem;
+    overflow: hidden;
+  }
+
+  .content {
+    padding: 2rem 2.59rem;
+
+    & h1,
+    & > p {
+      margin-bottom: 0.8rem;
+    }
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .author {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+      }
+
+      .authorDetails {
+        margin-left: 1rem;
+
+        h2 {
+          font-size: 0.8125rem;
+        }
+      }
+    }
+
+    .share {
+      position: relative;
+
+      > a {
+        display: inline-block;
+        text-align: center;
+        width: 1.875rem;
+        height: 1.875rem;
+        line-height: 1.875rem;
+        border-radius: 50%;
+        background-color: hsl(210, 46%, 95%);
+        transition: 0.3s ease;
+
+        svg {
+          fill: hsl(214, 17%, 51%);
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: hsl(214, 17%, 51%);
+
+          svg {
+            fill: hsl(210, 46%, 95%) !important;
+          }
+        }
+      }
+
+      #shareBox {
+        position: absolute;
+        top: -4.375rem;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9rem 2rem;
+        border-radius: 0.625rem;
+        background-color: hsl(217, 19%, 35%);
+        opacity: 0;
+        transition: 0.4s ease;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -0.625rem;
+          border-left: 1.25rem solid transparent;
+          border-right: 1.25rem solid transparent;
+          border-top: 1.25rem solid hsl(217, 19%, 35%);
+        }
+
+        &.show {
+          opacity: 1;
+          transform: translateX(-50%) scale(1);
+        }
+
+        p {
+          margin: 0;
+          text-transform: uppercase;
+          letter-spacing: 0.25rem;
+          font-size: 0.625rem;
+          margin-right: 0.5rem;
+        }
+
+        a {
+          padding: 0 0.5rem;
+
+          svg {
+            fill: hsl(210, 46%, 95%);
+            font-size: 1.125rem;
+            vertical-align: middle;
+          }
+
+          &:hover svg,
+          &:focus svg {
+            fill: hsl(212, 23%, 69%);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .attribution {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    background-image: url('../../assets/images/faha1999.webp');
+    background-size: 100%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    z-index: 99;
+    padding: 1rem;
+    border: 0.0625rem solid hsl(233, 11%, 84%);
+    bottom: 1rem;
+
+    p {
+      visibility: hidden;
+      position: fixed;
+      bottom: 1rem;
+      right: 5rem;
+      width: 12.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0 1rem;
+      font-size: 0.6rem;
+      text-align: left;
+      letter-spacing: 0.2rem;
+      z-index: 999;
+      box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+      transition: 0.8s cubic-bezier(0.06, 0.8, 0.1, 1);
+      line-height: 1rem;
+
+      a {
+        color: hsl(217, 19%, 35%);
+        font-size: 700;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:hover p {
+      visibility: visible;
+      background: hsl(210, 46%, 95%);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .article {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+
+    .content {
+      position: relative;
+
+      h1 {
+        font-size: 1.125rem;
+      }
+
+      & > div {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0 2.95rem;
+        margin-top: 1rem;
+        border-radius: 0 0 0.625rem 0.625rem;
+        background: hsl(217, 19%, 35%);
+      }
+
+      .author {
+        display: none;
+      }
+
+      .share {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        & > a {
+          background-color: hsl(214, 17%, 51%);
+          width: 2.1875rem;
+          height: 2.1875rem;
+          line-height: 2.1875rem;
+          pointer-events: none;
+
+          svg {
+            fill: hsl(210, 46%, 95%);
+          }
+        }
+
+        #shareBox {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+          z-index: 1;
+          padding: 1.5rem 0;
+          border-radius: 0.625rem;
+          opacity: 1;
+
+          &::after {
+            display: none;
+          }
+
+          p {
+            font-size: 0.8125rem;
+          }
+        }
+      }
+    }
+  }
+}
