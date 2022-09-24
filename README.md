@@ -86,6 +86,10 @@ npm run build
 
 <a href="https://faha1999.github.io/Profile-card-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ">Try Out</a>
 
+### Testimonials grid section
+
+<a href="https://faha1999.github.io/Testimonials-grid-section/">Live</a> | <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

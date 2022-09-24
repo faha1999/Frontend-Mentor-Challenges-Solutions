@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: $Lightgray;
+  background-color: $LightGrayishBlue;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.17rem;
+}
+
+// background
+.moderateViolet {
+  background-color: $moderateViolet;
+}
+.darkGrayishBlue {
+  background-color: $darkGrayishBlue;
+}
+.darkBlackishBlue {
+  background-color: $darkBlackishBlue;
+}
+.White {
+  background-color: $White;
+  color: $darkGrayishBlue;
+}
+
+// Padding
+.p-3 {
+  padding: 1.5rem;
+}
+.p-5 {
+  padding: 2.5rem;
+}
+
+// Margin
+.mb-2 {
+  margin-bottom: 1rem;
+}
