@@ -1,0 +1,32 @@
+.themeToggler {
+  position: absolute;
+  top: 1em;
+  right: 7em;
+  font-size: 1.6em;
+  width: 2em;
+  height: 2em;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: hsl(180, 29%, 50%);
+  border-radius: 0.2em;
+  transition: all 0.2s ease-out;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+
+  @media screen and (max-width: 1000px) {
+    top: 0.5em;
+    right: 1em;
+  }
+  @media screen and (max-width: 786px) {
+    top: 0.63em;
+  }
+}

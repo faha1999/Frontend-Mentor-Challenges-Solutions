@@ -1,0 +1,71 @@
+.FilterBoxWrapper {
+  width: 100%;
+  min-height: 5.3em;
+  box-shadow: rgba(9, 30, 66, 0.25) 0rem 0.25rem 0.5rem -0.125rem,
+    rgba(9, 30, 66, 0.08) 0rem 0rem 0rem 0.0625rem;
+  margin-bottom: 2.78em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  padding: 0.83em 1.39em;
+  margin-top: -8.3em;
+  position: sticky;
+  top: 1.67em;
+  z-index: 2;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: -5.5em;
+    padding: 0.42em 0.84em;
+  }
+
+  @media screen and (max-width: 789px) {
+    margin-top: -6em;
+    font-size: 0.83em;
+    margin-bottom: 3.5em;
+  }
+
+  .FilterPillsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.39em;
+    color: $desaturated-dark-cyan;
+    opacity: 0.5;
+    font-size: $fs-global;
+    font-weight: $fw-bold;
+
+    @media screen and (max-width: 1000px) {
+      left: 0.84em;
+    }
+  }
+
+  .FilterInput {
+    padding: 0.28em 0;
+    border: none;
+    outline: none;
+    font-size: $fs-global;
+    color: $desaturated-dark-cyan;
+    font-weight: $fw-bold;
+  }
+
+  .ClearButton {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: $desaturated-dark-cyan;
+    text-decoration: underline;
+    font-weight: $fw-bold;
+    font-size: 0.9em;
+    opacity: 0.5;
+    transition: all 0.2s $timing-cubic;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

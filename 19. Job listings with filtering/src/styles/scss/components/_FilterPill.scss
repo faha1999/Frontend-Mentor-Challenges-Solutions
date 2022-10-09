@@ -1,0 +1,45 @@
+.FilterPillWrapper {
+  display: flex;
+  overflow: hidden;
+  margin: 0.56em;
+  animation: popIn 0.2s $timing-cubic forwards;
+
+  @media screen and (max-width: 789px) {
+    margin: 0.28em;
+  }
+
+  .Pill {
+    font-size: $fs-global;
+    color: $desaturated-dark-cyan;
+    background: $light-grayish-cyan-filter-pill;
+    padding: 0.56em 0.56em 0.28em;
+    font-weight: $fw-bold;
+    border: 0.14em solid $desaturated-dark-cyan;
+    border-radius: 0.3em 0 0 0.3em;
+    border-right: none;
+    user-select: none;
+
+    @media screen and (max-width: 789px) {
+      font-size: 0.83em;
+    }
+  }
+
+  .RemoveButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.22em;
+    border: none;
+    outline: none;
+    background: $desaturated-dark-cyan;
+    transition: $timing-cubic;
+    border: 0.14em solid $desaturated-dark-cyan;
+    border-left: none;
+    border-radius: 0 0.3em 0.3em 0;
+
+    & > img {
+      width: 0.8em;
+      height: 0.8em;
+    }
+  }
+}

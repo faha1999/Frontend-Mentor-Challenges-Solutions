@@ -94,6 +94,10 @@ npm run build
 
 <a href="https://faha1999.github.io/Article-preview-component/">Live</a> | <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT">Try Out</a>
 
+### Job listings with filtering
+
+<a href="https://job-listings-with-filtering-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

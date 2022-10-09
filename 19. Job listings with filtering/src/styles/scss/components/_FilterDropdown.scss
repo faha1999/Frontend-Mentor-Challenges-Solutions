@@ -1,0 +1,56 @@
+.FilterDropdownWrapper {
+  width: 100%;
+  max-height: 24em;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 0.5em;
+  margin-top: -2.22em;
+  position: absolute;
+  left: 0;
+  top: 8em;
+  z-index: 2;
+  animation: fadeUp 0.2s $timing-cubic forwards;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+  .DropdownItem {
+    font-size: 0.83em;
+    color: $desaturated-dark-cyan;
+    padding: 0.56em 1.11em;
+    font-weight: $fw-normal;
+    user-select: none;
+    cursor: pointer;
+    transition: padding 0.2s ease-out;
+    border-left: 0.3em solid transparent;
+
+    &:first-of-type {
+      padding-top: 1.11em;
+    }
+    &:last-of-type {
+      padding-bottom: 0.97em;
+    }
+
+    &:hover {
+      padding-left: 1.56em;
+      border-color: $desaturated-dark-cyan;
+    }
+  }
+
+  .Empty {
+    display: flex;
+    align-items: center;
+    padding: 1.11em;
+    font-size: 0.83em;
+    color: red;
+
+    & > img {
+      width: 3em;
+      margin-left: 0.56em;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .attribution {
+    p {
+      bottom: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0 1rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.2rem;
+      line-height: 1rem;
+
+      a {
+        color: hsl(180, 29%, 50%);
+        font-size: 700;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:hover p {
+      visibility: visible;
+      background: white;
+    }
+  }
+}

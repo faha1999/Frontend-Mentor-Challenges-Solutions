@@ -1,0 +1,9 @@
+@mixin FlexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin Transition {
+  transition: all 0.2s $timing-cubic;
+}

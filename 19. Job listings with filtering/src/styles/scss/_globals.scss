@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff-brand;
+}
+
+html {
+  font-size: 1vw;
+  font-weight: $fw-normal;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: $fs-global;
+  }
+}
+
+.Section {
+  transition: all 0.2s ease-out;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  padding: 5.56em 11.11em;
+
+  @media screen and (max-width: 1000px) {
+    padding: 2.78em 1.67em;
+  }
+}
+
+button {
+  cursor: pointer;
+}
