@@ -1,0 +1,73 @@
+.loading-card {
+  width: 85%;
+  background: $white;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  &--flag {
+    height: 200px;
+  }
+
+  &--details {
+    padding: 20px 20px 40px;
+
+    &-heading {
+      width: 90%;
+      height: 16px;
+    }
+
+    &--other {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      div {
+        width: 80%;
+        height: 16px;
+      }
+    }
+  }
+
+  @media (min-width: 31rem) {
+    width: 250px;
+
+    &--flag {
+      height: 160px;
+    }
+
+    &--details {
+      padding: 20px 30px 40px;
+    }
+  }
+}
+
+.loading-card--flag,
+.loading-card--details-heading,
+.loading-card--details--other div {
+  border-radius: 5px;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0.2) 38%,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0.2) 48%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load 2s infinite;
+  animation: skeleton 1s infinite;
+}
+
+@keyframes skeleton {
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.dark {
+  .loading-card {
+    background: $dark-blue;
+  }
+}

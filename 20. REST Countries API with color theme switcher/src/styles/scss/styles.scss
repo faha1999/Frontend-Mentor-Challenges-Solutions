@@ -1,0 +1,13 @@
+@import './variables';
+@import './mixins';
+@import './globals';
+
+// components
+@import './components/error';
+@import './components/LoadingDetails';
+@import './components/LoadingCard';
+@import './components/header';
+@import './components/search';
+@import './components/allCountries/AllCountries';
+@import './components/CountryDetails/CountryDetails';
+@import './components/theme/dark';

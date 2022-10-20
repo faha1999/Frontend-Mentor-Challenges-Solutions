@@ -98,6 +98,10 @@ npm run build
 
 <a href="https://job-listings-with-filtering-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt">Try Out</a>
 
+### REST Countries API with color theme switcher
+
+<a href="https://rest-countries-api-with-color-theme-switcher-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

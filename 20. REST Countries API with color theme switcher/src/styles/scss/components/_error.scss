@@ -1,0 +1,58 @@
+.error {
+  width: 100%;
+  text-align: center;
+  display: block;
+
+  &--information {
+    h1 {
+      font-size: 3rem;
+      font-weight: $fw-bold;
+
+      span {
+        display: inline-block;
+        transform: rotate(30deg);
+        margin-left: 8px;
+      }
+    }
+
+    p {
+      // max-width: 300px;
+      margin: 5px 0 12px 3px;
+    }
+
+    button {
+      display: inline-block;
+      font-weight: $fw-medium;
+      padding: 15px 30px;
+      background: $white;
+      border-radius: 8px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+}
+
+.dark {
+  .error--information {
+    button {
+      background: $dark-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .error {
+    min-width: 1024px;
+
+    &--information {
+      margin-top: 4rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .error {
+    min-width: 700px;
+  }
+}

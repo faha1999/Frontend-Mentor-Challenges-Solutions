@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button {
+  color: inherit;
+  font-family: inherit;
+  border: 0;
+}
+
+html {
+  @supports (scrollbar-width: thin) {
+    scrollbar-width: thin;
+    scrollbar-color: #575c70 transparent;
+  }
+}
+
+body {
+  font-weight: $fw-regular;
+  color: $very-dark-blue;
+  background: $very-light-gray;
+  font-size: $fs-home;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+
+    &-thumb {
+      border-radius: 40px;
+      background: hsl(0, 0%, 0%);
+    }
+  }
+}
+
+// selection
+
+::selection {
+  color: $white;
+  background: $very-dark-blue-background;
+}
+
+.dark {
+  ::selection {
+    color: $very-dark-blue;
+    background: $very-light-gray;
+  }
+}
+
+// components
+
+.search-filters-container {
+  margin-top: 30px;
+  padding: 0 15px;
+
+  @include media-sm() {
+    padding: 0 25px;
+  }
+
+  @include media-md() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 35px;
+  }
+
+  @include media-lg() {
+    margin-top: 60px;
+    padding: 0 100px;
+  }
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 15px;
+  margin-block: 60px;
+
+  @include media-sm() {
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+
+  @include media-md() {
+    gap: 70px;
+    padding: 0 35px;
+  }
+
+  @include media-lg() {
+    padding: 0 100px;
+  }
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.searching {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 5%;
+}

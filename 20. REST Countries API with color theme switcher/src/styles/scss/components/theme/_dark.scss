@@ -1,0 +1,31 @@
+.dark {
+  background-color: $very-dark-blue-background;
+  color: $white;
+
+  a {
+    color: $white !important;
+  }
+
+  .inputArea input,
+  .selectRegion,
+  .regionList li,
+  .inputArea input::placeholder,
+  .searchIcon,
+  .regionList,
+  .borderCountry,
+  .selectRegion summary:after {
+    color: $white;
+  }
+
+  nav,
+  .insideContainer,
+  .inputArea input,
+  .selectRegion,
+  .regionList,
+  .backBtn,
+  .countryDetails .countryDetailsInfo .borderCountries .borderCountry {
+    -webkit-box-shadow: 0px 7px 6px -4px rgba(4, 4, 4, 0.27);
+    box-shadow: 0px 7px 6px -4px rgba(9, 9, 9, 0.27);
+    background-color: $dark-blue;
+  }
+}
