@@ -1,0 +1,73 @@
+.hero {
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: center;
+  background-size: 44.9vw;
+  padding-bottom: 7.4375rem;
+
+  .row {
+    min-height: calc(100vh - 7.25rem);
+  }
+  h1 {
+    font-size: 4.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  p {
+    color: $GrayishViolet;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 62rem) {
+  .hero {
+    h1 {
+      font-size: 2.8125rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    padding-top: 6.4375rem;
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media (max-width: 36rem) {
+  .hero {
+    background: none;
+    padding-top: 6.4375rem;
+
+    img {
+      width: 126vw;
+      margin-bottom: 1.9375rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    p {
+      font-size: 0.875rem;
+      text-align: center;
+    }
+  }
+}

@@ -102,6 +102,10 @@ npm run build
 
 <a href="https://rest-countries-api-with-color-theme-switcher-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">Try Out</a>
 
+### URL shortening API landing page
+
+<a href="https://url-shortening-api-landing-page-steel-faha1999.vercel.app/">Live</a> | <a href="https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G">Try Out</a>
+
 <!-- ### Easybank
 
 <a href="">Live</a> | <a href="">Try Out</a> -->

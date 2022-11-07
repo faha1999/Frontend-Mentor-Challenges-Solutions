@@ -1,0 +1,114 @@
+.statistic {
+  background-color: hsl(225, 33%, 95%);
+  padding: 4.0625rem 0 7.5rem 0;
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  p {
+    font-weight: 500;
+    color: $Gray;
+    margin-bottom: 6.75rem;
+    line-height: 1.5;
+    font-size: 1.125rem;
+  }
+  .card {
+    padding: 5.5rem 2rem 2.5rem 2rem;
+    box-shadow: 0rem 0rem 0.25rem 0.1875rem hsla(0, 0%, 75%, 0.15);
+    border: none;
+    border-radius: 0.375rem;
+    position: relative;
+    display: inline-block;
+
+    .icon {
+      background: $DarkViolet;
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8.25rem;
+      margin-bottom: 2.5rem;
+    }
+    h3 {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .card-middle {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+    z-index: 2;
+  }
+  hr {
+    position: absolute;
+    top: 40%;
+    width: 25.25rem;
+    left: -0.75rem;
+    height: 0.5rem;
+    background-color: $Cyan;
+    border: none;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 62rem) {
+  .statistic {
+    .card {
+      margin-bottom: 4.75rem;
+    }
+    .card-middle {
+      margin-top: 0;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    hr {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 36rem) {
+  .statistic {
+    padding: 3rem 0 5rem;
+
+    h2 {
+      font-size: 1.6875rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+    .card {
+      margin-bottom: 5.5rem;
+      text-align: center;
+
+      .icon {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h3 {
+        font-size: 1.25rem;
+      }
+      P {
+        font-size: 0.875rem;
+      }
+    }
+    hr {
+      width: 0.5rem;
+      height: 113%;
+      margin: 0;
+      margin-top: -5.5rem;
+      left: calc(49% - 0.0625rem);
+      top: 0;
+      display: initial;
+    }
+  }
+}

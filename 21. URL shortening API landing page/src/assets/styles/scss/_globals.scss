@@ -1,0 +1,29 @@
+.btn {
+  padding: 0.6875rem 2rem;
+  font-weight: 600;
+
+  &-info {
+    color: #ffffff !important;
+    background-color: $Cyan;
+    border-color: $Cyan;
+
+    &:focus {
+      background-color: hsl(180, 68%, 46%);
+      border-color: hsl(180, 68%, 46%);
+    }
+    &:hover {
+      background-color: hsl(180, 75%, 54%);
+      border-color: hsl(180, 75%, 54%);
+      color: #ffffff;
+    }
+  }
+}
+
+.text {
+  &-info {
+    color: $Cyan;
+  }
+  &-danger {
+    color: $Red;
+  }
+}

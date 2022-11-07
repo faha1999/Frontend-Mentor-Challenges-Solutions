@@ -1,0 +1,22 @@
+.NewsLetter {
+  padding: 3.5625rem 0;
+  text-align: center;
+  background-image: url(../../images/bg-boost-desktop.svg);
+  background-color: $DarkViolet;
+
+  h2 {
+    margin-bottom: 1.6875rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 36rem) {
+  .NewsLetter {
+    background-image: url(../../images/bg-boost-mobile.svg);
+
+    h2 {
+      margin-bottom: 1.1875rem;
+      font-size: 1.5rem;
+    }
+  }
+}

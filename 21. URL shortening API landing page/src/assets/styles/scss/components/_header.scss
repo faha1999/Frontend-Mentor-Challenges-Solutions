@@ -1,0 +1,92 @@
+.navbar {
+  padding: 2.1875rem 0 !important;
+  position: fixed;
+  width: 100vw;
+  background: white;
+  z-index: 9;
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .navbar-toggler-icon {
+    border-top: 0.1875rem solid $GrayishViolet;
+    display: inherit;
+    height: 0;
+    width: 1.5rem;
+
+    &:nth-child(2) {
+      margin: 0.375rem 0;
+    }
+  }
+  .navbar-logo {
+    margin-right: 1.875rem;
+  }
+  .nav-link {
+    padding: 0.75rem 0.9375rem !important;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $Gray;
+
+    &:hover {
+      color: $VeryDarkViolet;
+      transition: 0.4s ease-in-out;
+    }
+  }
+  .btn {
+    padding: 0.625rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+
+    &-outline-info {
+      color: $Gray;
+      border-color: white;
+
+      &:focus {
+        background-color: $Cyan;
+        border-color: $Cyan;
+      }
+      &:hover {
+        color: $Cyan;
+        background-color: white;
+        border-color: $Cyan;
+      }
+    }
+  }
+}
+
+@media (max-width: 62rem) {
+  .navbar {
+    .navbar-collapse {
+      background: $DarkViolet;
+      border-radius: 0.5rem;
+      justify-content: center;
+      padding: calc(2.0625rem - 1.1875rem) 1.375rem 2.0625rem 1.375rem;
+      margin-top: 1.375rem;
+    }
+    .nav-link {
+      color: white;
+      padding: 1.1875rem 0.9375rem !important;
+      font-weight: 600;
+      text-align: center;
+
+      &:hover {
+        color: $Gray;
+      }
+    }
+    form {
+      flex-direction: column;
+      border-top: 0.0625rem solid $VeryDarkBlue;
+    }
+    .btn-outline-info {
+      color: white;
+      border-color: transparent;
+      margin-bottom: 0.75rem;
+      margin-top: 0.75rem;
+      background: transparent !important;
+    }
+  }
+}
